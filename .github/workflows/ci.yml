@@ -39,6 +39,6 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/armhf
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref }}
+            ghcr.io/${{ github.repository }}:${{ github.head_ref }}
             ghcr.io/${{ github.repository }}:latest
           pull: true
