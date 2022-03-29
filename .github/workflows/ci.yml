@@ -43,8 +43,6 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2.10.0
         with:
-          builder: ${{ steps.buildx.outputs.name }}
-          context: .
           platforms: linux/amd64,linux/arm64,linux/armhf
           push: true
           tags: |
