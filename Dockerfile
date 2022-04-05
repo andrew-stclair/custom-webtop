@@ -18,7 +18,8 @@ RUN apk update; apk upgrade; \
     apk add tzdata; \
     cp /usr/share/zoneinfo/$TZ /etc/localtime; \
     echo $TZ > /etc/timezone; \
-    apk del tzdata
+    apk del tzdata; \
+    kill $(pidof plasmashell)
 
 COPY config/* /config/.
 
