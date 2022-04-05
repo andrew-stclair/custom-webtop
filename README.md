@@ -1,5 +1,7 @@
 # custom-webtop
 
+[![Build and publish](https://github.com/andrew-stclair/custom-webtop/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/andrew-stclair/custom-webtop/actions/workflows/ci.yml)
+
 Start a container
 ```bash
 docker run -d \
