@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/config/configure.sh
+Icon=dialog-scripts
+Name=configure.sh
+Path=
+Type=Application
+X-KDE-AutostartScript=true
