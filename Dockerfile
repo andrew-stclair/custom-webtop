@@ -21,7 +21,5 @@ RUN apk update; apk upgrade; \
 
 COPY config/* /config/.
 
-RUN chmod +x /config/.config/autostart-scripts/*.sh
-
 EXPOSE 3000
 VOLUME /config
