@@ -18,7 +18,7 @@ RUN apk update; apk upgrade; \
     apk add tzdata; \
     cp /usr/share/zoneinfo/$TZ /etc/localtime; \
     echo $TZ > /etc/timezone; \
-    apk del tzdata
+    lookandfeeltool -a org.kde.breezedark.desktop
 
 COPY config/* /config/.
 
