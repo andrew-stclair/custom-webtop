@@ -1,4 +1,4 @@
-FROM lscr.io/linuxserver/webtop:alpine-kde
+FROM ghcr.io/linuxserver/webtop:alpine-kde
 
 LABEL org.opencontainers.image.description "My custom version of LinuxServers Webtop. Nothing special right now, but it's a work in progress"
 
