@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/config/configure.sh
+Exec=chmod +x /config/configure.sh; /config/configure.sh
 Icon=dialog-scripts
 Name=configure.sh
 Path=
