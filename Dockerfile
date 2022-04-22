@@ -17,8 +17,7 @@ RUN apk update; apk upgrade; \
     sed -i 's/bash/zsh/g' /etc/passwd; \
     apk add tzdata; \
     cp /usr/share/zoneinfo/$TZ /etc/localtime; \
-    echo $TZ > /etc/timezone; \
-    chmod +x /config/*.sh
+    echo $TZ > /etc/timezone
 
 COPY config/* /config/.
 
