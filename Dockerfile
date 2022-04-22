@@ -1,6 +1,6 @@
 FROM ghcr.io/linuxserver/webtop:alpine-kde
 
-LABEL org.opencontainers.image.description "My custom version of LinuxServers Webtop. Nothing special right now, but it's a work in progress"
+LABEL org.opencontainers.image.description "My custom version of LinuxServers Webtop"
 
 # Environment
 ENV TZ "Australia/Melbourne"
@@ -18,7 +18,7 @@ RUN apk update; apk upgrade; \
     apk add tzdata; \
     cp /usr/share/zoneinfo/$TZ /etc/localtime; \
     echo $TZ > /etc/timezone; \
-    lookandfeeltool -a org.kde.breezedark.desktop
+    lookandfeeltool --list
 
 COPY config/* /config/.
 
