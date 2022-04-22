@@ -20,6 +20,7 @@ RUN apk update; apk upgrade; \
     echo $TZ > /etc/timezone
 
 COPY config/* /config/.
+COPY autostart /config/.config/autostart
 
 EXPOSE 3000
 VOLUME /config
